@@ -117,7 +117,7 @@
 											more accuracte model is developed and verified with numerical simulations and validated with experimental thermal maps.</p>
 
 											<p> 
-												Specially fabricated sample devices are thermally mapped to validate the reduced models and the thermal simulations. The strucutre of the 
+												Specially fabricated sample devices are thermally mapped to validate the reduced models and the thermal simulations. The structure of the 
 												samples are presented in the figures below and consist of microresistors acting as heat sources in different levels of the BEoL.
 											</p>
 
@@ -151,6 +151,34 @@
 										  			<figcaption>Steady State thermal respone of 10 µm at different power levels.</figcaption>
 										  		</div>
 
+												  <p> The experimental and numerical analysis is performed to assess the accuracy and validity of 2D reduced models and to improve upon them. 
+												  <div>
+													<img src="images/beol2d.png"  style="width:50%" >
+													<figcaption>Developed 2D model for heating in BEoL interconnects (MATLAB GUI). Model provides allowable activation limits given 
+														any interconnect dimensions and material, and a desired allowable temperature rise (15°C for MET and 5°C for Poly). Model also considers
+														effect of spacing. 
+													</figcaption>
+												</div>
+												</p>
+
+												<p>The 2D model is expanded to include 3D effects at the interconnect ends, as well as conduction to the vias and conduction in cross configurations. 
+													A lossy wire model is implemented with an iterative method to develop a thermal resistive network of heat conduction between the different interconnects. 
+													The conduction to the surrounding is governed by the 2D reduced thermal model presented earlier and can provide the maximum attainable temperature rise in the interconnect. 
+													The model is verified with numerical simulations and validated with experimental measurements of sample BEoL structures. 
+												</p>
+												
+												<div>
+													<img src="images/beol3dval.PNG"  style="width:70%" >
+													<figcaption>Sample results from simulations and thermal imaging performed for the validation and verification of the reduced model. 
+													</figcaption>
+												</div>
+
+												<div>
+													<img src="images/beol3d.png"  style="width:90%" >
+													<figcaption>Developed 3D model in MATLAB GUI showing the resulting heating profile based on geometric, thermal and electrical parameters. 
+													</figcaption>
+												</div>
+
 											<h3 id="beolcmp"> Thermal investigation of Cooling effect of CMP dummy fill in BEoL</h3>
 												<h4> Assaad El Helou, Archana Venugopal, and Peter E. Raad</h4>
 											
@@ -175,7 +203,7 @@
 											<p>	
 											</p>
 
-											<div><img src="images/beolcmp3.PNG"  style="width:75%">
+											<div><img src="images/beolcmp3.PNG"  style="width:60%">
 											<figcaption>Thermal modeling results of cooling effect with and without the CMP showing an improvement in allowable generation flux.												
 											</figcaption></div>
 										
